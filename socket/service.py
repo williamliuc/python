@@ -7,8 +7,7 @@ tcpSerSocket=socket(AF_INET,SOCK_STREAM)
 address=('',7788)
 tcpSerSocket.bind(address)#绑定端口号
 
-#使用socket创建的套接字默认的属性是主动的，使用listen将其变为被动的
-
+#使用socket创建的套接字默认的属性是主动的，使用listen将其变为被动的，设置最大链接客户端数为5
 tcpSerSocket.listen(5)
 while True:
         
